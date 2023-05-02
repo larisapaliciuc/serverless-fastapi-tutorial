@@ -36,7 +36,7 @@ jobs:
         run: cd ./items_api
       
       - name: Upload zip file artifact
-        uses: actions/upload-artifact@v2aws
+        uses: actions/upload-artifact@v2
         with:
           name: fastapi
           path: fastapi.zip
