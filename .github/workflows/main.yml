@@ -33,7 +33,7 @@ jobs:
         run: cd ./venv/lib/python3.11/site-packages; zip -r9 ../../../../fastapi.zip .
       
       - name: Add API files to zip
-        run: cd ./fastapi
+        run: cd ./items_api
       
       - name: Upload zip file artifact
         uses: actions/upload-artifact@v2
