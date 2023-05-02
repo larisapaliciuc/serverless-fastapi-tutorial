@@ -58,7 +58,7 @@ jobs:
       - name: Download Lambda fastapi.zip
         uses: actions/download-artifact@v2
         with: 
-          name: items_api
+          name: fastapi
       
       - name: Upload to S3 bucket
         run: aws s3 cp fastapi.zip s3://fastapi-test-bucket-larisa/fastapi.zip
