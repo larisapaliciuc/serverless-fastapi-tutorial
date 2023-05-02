@@ -33,7 +33,7 @@ jobs:
       - name: Create archive of dependencies
         run: /
           cd ./venv/lib/python3.11/site-packages
-          zip -r9 ../../../../fastapi.zip
+          zip -r9 ../../../../fastapi.zip .
 
       - name: Add API files to zip
         run: cd ./fastapi
